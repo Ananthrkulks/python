@@ -1,7 +1,7 @@
 import random
 
 def get_user_choice():
-    user_choice = input("Enter your choice (rock, paper, scissors): ").lower()
+    user_choice = input("Enter choice (rock, paper, scissors): ").lower()
     while user_choice not in ['rock', 'paper', 'scissors']:
         print("Invalid choice. Please try again.")
         user_choice = input("Enter your choice (rock, paper, scissors): ").lower()
@@ -31,8 +31,8 @@ def play_game():
     print(f"Computer chose: {computer_choice}\n")
     
     result = determine_winner(user_choice, computer_choice)
+
     print(result)
 
 if __name__ == "__main__":
     play_game()
-            
